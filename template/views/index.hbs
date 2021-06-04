@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" href="/img/show.png">
+    </head>
+    <body>
+        <div class="main-content">
+              {{>header}}
+              {{msg}}
+              <form>
+                  <input placeholder="Enter the show name" id="showBox">
+                  <button>Search</button>
+              </form>
+              <img id="show-img" src="">
+              <p id="msg-1"></p>
+              <p id="msg-2"></p>
+              <p id="msg-3"></p>
+              <p id="msg-4"></p>
+              <p id="msg-5"></p>
+              <p id="msg-6"></p>
+              <p id="msg-7"></p>
+
+        </div>
+      
+        {{>footer}}
+
+        <script src="/js/try.js"></script>
+    </body>
+</html>
