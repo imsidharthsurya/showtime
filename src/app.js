@@ -4,6 +4,7 @@ const hbs=require("hbs")
 const showDetails = require("./shows")
 
 const app=express()
+const port=process.env.PORT || 3000
 
 const publicPath=path.join(__dirname,"../public")
 const viewspath=path.join(__dirname,"../template/views")
@@ -78,6 +79,6 @@ app.get("*",(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log("running on port 3000")
+app.listen(port,()=>{
+    console.log("running on port "+port)
 })

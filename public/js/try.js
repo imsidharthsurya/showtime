@@ -14,7 +14,7 @@ showForm.addEventListener("submit",(e)=>{
     document.querySelector("#msg-7").textContent=""
     const showName=show.value
     console.log(showName)
-    fetch("http://localhost:3000/show?q="+showName).then((response)=>{
+    fetch("/show?q="+showName).then((response)=>{
     response.json().then((data)=>{
             if(data.error)
             {
